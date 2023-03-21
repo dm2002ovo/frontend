@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Experience</title>
+
+    <link href="style.css" rel="stylesheet">
+    <script defer src="experience.js"></script>
+</head>
+<body>
+
+<!-- A button to open the popup form -->
+<button class="open-button" onclick="openForm()">Add Experience</button>
+
+<!-- The form -->
+<div class="form-popup" id="myForm">
+    <form action="/action_page.php" class="form-container">
+        <label for="shop_name"><b>Shop Name</b></label>
+        <input type="text" placeholder="Enter Shop Name" name="shop_name" >
+        <br>
+
+        <label for="start_date"><b>Start Date</b></label>
+        <input type="date" placeholder="Start Date" name="start_date" >
+        <br>
+
+        <label for="end_date"><b>End Date</b></label>
+        <input type="date" placeholder="End Date" name="end_date" >
+        <br>
+
+        <label for="location"><b>Location</b></label>
+        <input type="text" placeholder="Enter Location" name="location" >
+
+        <br>
+        <button class="open-button" onclick="openR_Form()">Add Referral</button>
+        <br>
+
+        <div id="newtask">
+            <input type="text" placeholder="Add Tasks">
+            <button id="push">+</button>
+        </div>
+        <div id="tasks"></div>
+
+        <button type="submit" class="btn">Add</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+    </form>
+</div>
+
+
+<!--work in progress-->
+<!--add reference pop up-->
+<div class="form-popup" id="myR_Form">
+    <form action="/action_page.php" class="form-container">
+        <label for="r_name"><b>Name</b></label>
+        <input type="text" placeholder="Enter Referral Name" name="r_name" required>
+        <br>
+        <label for="r_position"><b>Position</b></label>
+        <input type="text" placeholder="Enter Referral Position" name="r_position" required>
+        <br>
+        <label for="r_phone"><b>Phone</b></label>
+        <input type="text" placeholder="Enter Referral Phone" name="r_phone" required>
+        <br>
+        <label for="r_email"><b>E-mail</b></label>
+        <input type="text" placeholder="Enter Referral E-mail" name="r_email" required>
+        <br>
+
+
+        <button type="submit" class="btn">Add</button>
+        <button type="button" class="btn cancel" onclick="closeR_Form()">Close</button>
+    </form>
+</div>
+
+
+
+</body>
+</html>

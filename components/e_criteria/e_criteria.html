@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Eligibiltiy Criteria</title>
+  <link href="style.css" rel="stylesheet">
+  <script defer src="e_criteria.js"></script>
+</head>
+<body>
+<h1>Are you ready to work? Do you meet the following criteria:</h1>
+  <label class="container">Age between 18 - 66?
+    <input type="checkbox" checked="checked">
+    <span class="checkmark"></span>
+
+    <button type="button" class="collapsible">Learn More</button>
+    <div class="content">
+      <p>Job Seekers are required to be "work ready". This means having the necessary training,
+        education, motivation, transport and ability to look for work in the current open work
+        market</p>
+    </div>
+  </label>
+
+  <label class="container">Ready to Work
+    <input type="checkbox">
+    <span class="checkmark"></span>
+
+    <button type="button" class="collapsible">Learn More</button>
+    <div class="content">
+      <p>Job Seekers are required to be "work ready". This means having the necessary training,
+        education, motivation, transport and ability to look for work in the current open work
+        market</p>
+    </div>
+  </label>
+
+  <label class="container">
+    <img src="clock.png" alt="clock pic">
+    Ready to work 8+ hours a week
+    <input type="checkbox">
+    <span class="checkmark"></span>
+
+    <div class="popup" onclick="myFunction()">Learn More
+      <span class="popuptext" id="myPopup">Job Seekers are required to be "work ready". This means having the necessary training,
+        education, motivation, transport and ability to look for work in the current open work
+        market</span>
+    </div>
+  </label>
+
+  <label class="container">
+    <img src="meeting.jpg" alt="clock pic">
+    Available for meetings
+    <input type="checkbox">
+    <span class="checkmark"></span>
+
+    <button class="open-button" onclick="openForm()">Learn More</button>
+
+  </label>
+
+<div class="form-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+</body>
+</html>
